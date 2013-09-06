@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+%\setmainfont[Mapping=tex-text]{文泉驿正黑}
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+
+%\usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
+  
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB W3}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB W3}
+\CJKtilde
+
+% personal data
+\firstname{张智博}
+\familyname{}
+\title{@牛小腩}               % optional, remove the line if not wanted
+\homepage{github.com/niusmallnan}
+\mobile{13655713575}                    % optional, remove the line if not wanted
+\email{zhangzhibo521@gmail.com}                      % optional, remove the line if not wanted
+\quote{\small{树叶绿了又黄还是穷得瑟}}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+
+
+\section{技术特长}
+\cvitem{}
+{两年Android开发经验，积累了一定的组件源码，可以从事应用开发和基础库的开发}{}
+\cvitem{}
+{两年Linux\&MacOS 工作经验，写过shell脚本，搞过一些运维部署，可以进行一些Linux服务器维护}
+\cvitem{}
+{三年web服务端开发经验，主要使用Nginx/tornado等server，数据库mysql，语言python/java，玩过消息队列，缓存服务，RPC等等，服务性能优化和数据库优化有一定经验}
+\cvitem{}
+{两年web地图应用开发，主要是Javascript，当时使用的框架包括Jquery\&YUI}
+
+\section{兴趣爱好}
+\cventry{闲情逸致}{douban}{吟诗作对人生快事，部分作品链接 (\href{http://www.douban.com/people/niusmallnan/notes?start=30}{猛击此处})}{}{}{}
+\cventry{朱弦三叹}{music}{classic \& rock \& folk}{}{}{}
+\cventry{偷师学艺}{github}{fork能够帮助业务的项目是一大快事}{}{}{}
+\cventry{游戏人生}{WoW}{我只是个低调的90级熊猫人小FS，半AFK状态}{}{}{}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}
